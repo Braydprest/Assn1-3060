@@ -13,7 +13,7 @@ the copy will receive a zero on this assignment
 #include <stdio.h>
 #include <stdlib.h>
 
-int main(int argc, char **argv) {
+int main(int argc, char *argv[]) {
 
 	printf("Assignment 1 by Brayden Prestwich\n");	
 	int count;
@@ -22,7 +22,7 @@ int main(int argc, char **argv) {
 	while (argc--){
 		
 		//%d is a place holder for int count, %s for  *argv,
-		printf("Argument #%d is %s\n", count, * argv++ );
+		printf("Argument #%d is %s\n", count, *argv++);
 		count++;	
 	}
 	

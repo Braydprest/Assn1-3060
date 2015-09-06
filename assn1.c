@@ -10,11 +10,22 @@ the copy will receive a zero on this assignment
 */
 
 
-include <stdio.h>
+#include <stdio.h>
+#include <stdlib.h>
 
-int main() {
-	int argc
-	char *argv[];
-	printf("Hello World\n");
+int main(int argc, char **argv) {
+
+	printf("Assignment 1 by Brayden Prestwich\n");	
+	int count;
+
+	// loop exicutes and prints strings
+	while (argc--){
+		
+		//%d is a place holder for int count, %s for  *argv,
+		printf("Argument #%d is %s\n", count, * argv++ );
+		count++;	
+	}
+	
+	printf ("number of Arguments %d\n", count);
 	return 0;
 }
